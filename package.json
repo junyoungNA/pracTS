@@ -4,12 +4,16 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "build":"tsc",
-    "build:watch":"tsc watch"
+    "build": "tsc",
+    "build:watch": "tsc watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }
