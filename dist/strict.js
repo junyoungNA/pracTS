@@ -1,13 +1,4 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 //strict 모드는 왜 true로 해야하나
 //noImlicitAny
 // function noImlicitAnyFunc(arg) {
@@ -17,6 +8,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 //아무것도 쓰지않으면 에러를 발생
 //이 오류를해결하면, any라고 지정되어 있지 않은 경우는 any가 아닌것
 //(타입 추론이 되었으므로)
+//suppressImplicitAnyIndexErrors
+//noImplicitAny 사용할 때,인덱스 객체에 인덱스 signature 가 없는 경우 오류가 발생하는데 이를 예외 처리합니다.
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 //noImplicitThis
 //명시적이지 않게 any타입을 사용하여, this표현식에 사용하면, 에러를 발생
 function noImlicitThisFunc(name, age) {
@@ -30,20 +32,20 @@ function noImlicitThisFunc(name, age) {
 }
 //첫번째 매개변수 자리에 this를 놓고, this에 대한 타입을 어떤 것이라도
 //표현하지 않으면 noImlicitAny 가 오류를 발생
-//javascript 에서는 매개변수에 this를 넣으면, 
+//javascript 에서는 매개변수에 this를 넣으면,
 //이미예약된 키워드라 SyntaxError를 발생!
 //call/apply/bind 와 같이 this를 대체하여
 //함수 콜을 하는 용도로도 쓰입니다.
 //그래서 this를 any로 명시적으로 지정하는것은 합리적입니다.
 //구체적인 사용처가 있는 경우 타입을 표현하기도 합니다.
-//class에서는 this를 사용하면서, noImplicitThis와 
+//class에서는 this를 사용하면서, noImplicitThis와
 //관련한 에러가 나지않습니다.
 //class에서 constructor를 제외한 멤버 함수의 첫번째
 //매개변수도 일반 함수와 마찬가지로 this를 사용 가능!
 //stictNullChecks
 //stictNullChecks을 적용하지 않으면
 //모든 타입은 Null, undefined 값을 가질 수 있다.
-//string 으로 타입을 지정해도, null 혹은 undefined 
+//string 으로 타입을 지정해도, null 혹은 undefined
 //값을 할당 가능해진다 이것은 큰 오류!!
 //한 가지 예외는 undefined에 void할당 가능!
 //strictFunctionTypes
@@ -80,7 +82,7 @@ class Woman {
     //지금의 에러를 무시해줘 라는 의미!
     initalize(name, age) {
         return __awaiter(this, void 0, void 0, function* () {
-            //async를 통해 생성자 함수를 대신해서 
+            //async를 통해 생성자 함수를 대신해서
             //다른 곳에서 할당가능!?
             this._name = name;
             this._age = age;

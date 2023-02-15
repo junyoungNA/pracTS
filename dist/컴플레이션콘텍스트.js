@@ -22,20 +22,20 @@
 //extends 프로퍼티를 사용할때는 stringr값을 설정해 줄 수 있고 파일경로
 //json파일 등의 파일을 상속받을 수 있다.
 //extends를 통해 설정할 수 있는 파일을 타입스크립트에서 공개했다
-//bases 라는 이름의 여러가지 형태의 설정할 수 있는 모든 부모설정들이 있다. 
+//bases 라는 이름의 여러가지 형태의 설정할 수 있는 모든 부모설정들이 있다.
 //버젼의 따른node 설정등
-//npm install --save-dev @tsconfig/deno 
-//files, include, exclude 
+//npm install --save-dev @tsconfig/deno
+//files, include, exclude
 //3가지가 중요한 역할을 함
 //프로젝트안에서 어떤파일을 컴파일할건지 결정해주는 역할
 //만약에 files,include,exclude가 tsconfig파일에 없다면
 //모든 파일을 컴파일하개 된다.
 //exclude는 컴파일을 제외시킬 파일을 설정
-//하지만 files 설정되어있는 파일이라면 
+//하지만 files 설정되어있는 파일이라면
 //exclude에 설정되더라도 무시하고 컴파일한다!
 //files
 //상대 혹은 절대 경로의 리스트 배열
-//exclude영향을 받지 않음? 
+//exclude영향을 받지 않음?
 //incldue, exclude
 //glob 패턴 (마치 gitIgnore);
 //incdlue
@@ -51,7 +51,7 @@
 //리액트를 import했을때 위에서 설치한 type/react로
 //설치한 index.d.ts파일이 react에 타입설정을 해준다.
 // @types란?
-//TypeScript 2.0 부터 사용 가능하진 내장 
+//TypeScript 2.0 부터 사용 가능하진 내장
 //type definition 시스템
 //아무 설정을 안하면?
 //node_modules/@types 라는 모든 경로를 찾아서 사용
@@ -63,7 +63,7 @@
 //typeRoots 와 types를 같이 사용하지 않습니다.
 //target 과 lib
 //타입스크립트가 어떤 런타임에서 실행이 가능한지 의문?
-//target 
+//target
 //빌드의 결과물을 어떤 버전으로 할 것이냐
 //지정을 안하면 es3 입니다.
 //lib
@@ -79,3 +79,4 @@
 //rooDir 내소스 폴더를 dir로 지정할 수 있다
 //src같은 폴더를 rootDir로 설정해 준 뒤에
 //outDir로 컴파일 가능하다?
+//strict 옵션
