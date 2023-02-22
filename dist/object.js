@@ -1,4 +1,3 @@
-"use strict";
 //object
 //primitive type 원시값 타입이 아닌 것을 나타내고 싶을때 사용!
 //number, string, boolean, bigint, symbol, null, undefined 

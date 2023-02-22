@@ -1,4 +1,3 @@
-"use strict";
 //return에 사용되는 never타입 설정
 //never 타입은 모든 타입의 subtype 이며,
 //모든 타입에 할당 할 수 있습니다.

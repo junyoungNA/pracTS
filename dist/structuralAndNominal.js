@@ -1,4 +1,3 @@
-"use strict";
 //타입스크립트이 타입 체계를 이해하기
 //타입스크립트는 Structral Type System을 따른다.
 //구조가 같으면 같은 타입!

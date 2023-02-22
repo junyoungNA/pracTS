@@ -1,4 +1,3 @@
-"use strict";
 //tuple은 array배열의 들어갈 요소의 순번과 그 타입도 맞아야한다!
 let x;
 //첫번째 요소에는 string 두번째 요소에는 number타입

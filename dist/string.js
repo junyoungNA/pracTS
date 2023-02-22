@@ -1,4 +1,3 @@
-"use strict";
 let myName = 'mark'; //작은따옴표 
 myName = "Mark"; //큰따옴표
 let fullName = 'Mark lee'; //작은 따옴표 사용

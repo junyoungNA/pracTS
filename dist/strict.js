@@ -1,4 +1,3 @@
-"use strict";
 //strict 모드는 왜 true로 해야하나
 //noImlicitAny
 // function noImlicitAnyFunc(arg) {
