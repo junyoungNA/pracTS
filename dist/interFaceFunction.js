@@ -1,3 +1,4 @@
+"use strict";
 //인자에 age ? 물음표를 추가 하지않으면 에러
 // const helloPerson: HelloPerson = function (name: string, age?: number) {
 //   console.log(`안녕하세요! ${name}입니다.`);

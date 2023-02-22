@@ -1,3 +1,4 @@
+"use strict";
 //타입 별칭 (별명)
 //interface랑 유사
 //Primitive, union Type, Tuple, Function

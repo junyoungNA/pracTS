@@ -1,3 +1,4 @@
+"use strict";
 //TypeScript에서 , undefined 와 null은 실제와 각각
 //undefined와 및 null 타입을 가집니다.
 //void와 같이 그 자체로는 유용하지 않습니다.

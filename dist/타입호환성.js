@@ -1,3 +1,4 @@
+"use strict";
 //sub1 타입은 sup1 타입의 서브 타입이다.
 let sub1 = 1; //sub에는 1값만 넣을 수 있다.
 let sup1 = sub1;

@@ -1,3 +1,4 @@
+"use strict";
 //ECMAScript 2015의 Symbol입니다.
 //new Symbol 로 사용할 수 없습니다.
 //Symbol 을 함수로 사용해서 symbol타입을 만들어 낼 수 있습니다.

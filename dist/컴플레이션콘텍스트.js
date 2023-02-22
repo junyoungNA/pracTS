@@ -1,3 +1,4 @@
+"use strict";
 //Compilation Context
 //컴플레이션 콘텍스트
 //어떠한 파일을 컴파일 할자 , 하지않을지
