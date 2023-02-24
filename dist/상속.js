@@ -33,5 +33,5 @@ class Child extends Parent {
     }
 }
 const e = new Child(5);
-e.print(); //상속 받아서 사용가능
+e.print(); //상속 받아서 사용가능 mark retry 5
 e.gender; //상속 받은 후에 Child 따로 생성했으므로 사용가능
